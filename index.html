@@ -119,7 +119,7 @@
 
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <!-- <div class="container">
       <div class="columns is-centered ">
         <h3 class="title is-3 ">Overview of SpikeGS</h3>
       </div>
@@ -129,7 +129,7 @@
                   type="video/mp4">
         </video>
   
-      </div>
+      </div> -->
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column" style="padding-left: 100px;padding-right: 100px;">
@@ -228,27 +228,15 @@
           <!-- 第一排图片 -->
           <div class="swiper-slide">
             <div class="columns is-centered">
-              <div class="column is-one-quarter">
+              <div class="column is-half">
                 <a href="https://coldsakrua.github.io/stump_playroom_ini/">
                   <img src="./static/images/stump_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
                   <p>Initial scene</p>
                 </a>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-half">
                 <a href="https://coldsakrua.github.io/bonsai_counter_ini/">
                   <img src="./static/images/bonsai_counter_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
-                  <p>Initial scene</p>
-                </a>
-              </div>
-              <div class="column is-one-quarter">
-                <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
-                  <img src="./static/images/kitchen_bonsai_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
-                  <p>Initial scene</p>
-                </a>
-              </div>
-              <div class="column is-one-quarter">
-                <a href="https://coldsakrua.github.io/flower_playroom_ini/">
-                  <img src="./static/images/flower_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
                   <p>Initial scene</p>
                 </a>
               </div>
@@ -258,25 +246,49 @@
           <!-- 第二排图片 -->
           <div class="swiper-slide">
             <div class="columns is-centered">
-              <div class="column is-one-quarter">
+              <div class="column is-half">
+                <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
+                  <img src="./static/images/kitchen_bonsai_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+              <div class="column is-half">
+                <a href="https://coldsakrua.github.io/flower_playroom_ini/">
+                  <img src="./static/images/flower_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 第三排图片 -->
+          <div class="swiper-slide">
+            <div class="columns is-centered">
+              <div class="column is-half">
                 <a href="https://coldsakrua.github.io/stump_playroom_hide/">
                   <img src="./static/images/stump_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Stump hides in playroom"/>
                   <p>Stump hides in playroom</p>
                 </a>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-half">
                 <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
                   <img src="./static/images/bonsai_counter_hide.png" style="width: 100%; object-fit: cover;" alt="Bonsai hides in counter"/>
                   <p>Bonsai hides in counter</p>
                 </a>
               </div>
-              <div class="column is-one-quarter">
+            </div>
+          </div>
+
+          <!-- 第四排图片 -->
+          <div class="swiper-slide">
+            <div class="columns is-centered">
+              <div class="column is-half">
                 <a href="https://coldsakrua.github.io/kitchen_bonsai_hide/">
                   <img src="./static/images/kitchen_bonsai_hide.png" style="width: 100%; object-fit: cover;" alt="Stump hides in playroom"/>
                   <p>Kitchen hides in bonsai</p>
                 </a>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-half">
                 <a href="https://coldsakrua.github.io/flower_playroom_hide/">
                   <img src="./static/images/flower_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Bonsai hides in counter"/>
                   <p>Flower hides in playroom</p>
@@ -284,13 +296,14 @@
               </div>
             </div>
           </div>
+          
         </div>
 
         <!-- 上下左右导航按钮 -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
 
-        <!-- 分页器 (可选) -->
+        <!-- 分页器 -->
         <div class="swiper-pagination"></div>
       </div>
     </div>
@@ -301,11 +314,11 @@
 <script>
   var swiper = new Swiper('.swiper-container', {
     loop: true, // 循环模式
-    slidesPerView: 4, // 每次显示4张图片，切换一张图片
-    spaceBetween: 10, // 图片之间的空隙
+    slidesPerView: 1, // 每次显示一个轮播项（即每次切换一排的图片）
+    spaceBetween: 10, // 每个轮播项之间的间隔
     navigation: {
-      nextEl: '.swiper-button-next', // 下一张
-      prevEl: '.swiper-button-prev', // 上一张
+      nextEl: '.swiper-button-next', // 下一张按钮
+      prevEl: '.swiper-button-prev', // 上一张按钮
     },
     pagination: {
       el: '.swiper-pagination', // 分页器
@@ -314,23 +327,6 @@
   });
 </script>
 
-
-<!-- 初始化 Swiper -->
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    loop: true, // 循环模式
-    slidesPerView: 1, // 每次显示一个图片
-    spaceBetween: 10, // 图片之间的空隙
-    navigation: {
-      nextEl: '.swiper-button-next', // 下一张
-      prevEl: '.swiper-button-prev', // 上一张
-    },
-    pagination: {
-      el: '.swiper-pagination', // 分页器
-      clickable: true,
-    },
-  });
-</script>
 
 
 
