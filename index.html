@@ -218,6 +218,12 @@
 </section> -->
 
 
+<!-- 引入 Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- 引入 Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -225,7 +231,7 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           
-          <!-- 第一排图片 -->
+          <!-- 第一组图片 -->
           <div class="swiper-slide">
             <div class="columns is-centered">
               <div class="column is-half">
@@ -241,10 +247,6 @@
                 </a>
               </div>
             </div>
-          </div>
-
-          <!-- 第二排图片 -->
-          <div class="swiper-slide">
             <div class="columns is-centered">
               <div class="column is-half">
                 <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
@@ -261,7 +263,7 @@
             </div>
           </div>
 
-          <!-- 第三排图片 -->
+          <!-- 第二组图片 -->
           <div class="swiper-slide">
             <div class="columns is-centered">
               <div class="column is-half">
@@ -277,10 +279,6 @@
                 </a>
               </div>
             </div>
-          </div>
-
-          <!-- 第四排图片 -->
-          <div class="swiper-slide">
             <div class="columns is-centered">
               <div class="column is-half">
                 <a href="https://coldsakrua.github.io/kitchen_bonsai_hide/">
@@ -296,7 +294,6 @@
               </div>
             </div>
           </div>
-          
         </div>
 
         <!-- 上下左右导航按钮 -->
@@ -314,7 +311,7 @@
 <script>
   var swiper = new Swiper('.swiper-container', {
     loop: true, // 循环模式
-    slidesPerView: 1, // 每次显示一个轮播项（即每次切换一排的图片）
+    slidesPerView: 1, // 每次显示一个轮播项（即一组两排）
     spaceBetween: 10, // 每个轮播项之间的间隔
     navigation: {
       nextEl: '.swiper-button-next', // 下一张按钮
