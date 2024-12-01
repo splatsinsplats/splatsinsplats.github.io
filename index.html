@@ -157,107 +157,165 @@
 </section>
 
 
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       
     <div class="columns is-centered ">
-      <!-- <h3 class="title is-3 ">Overview of SpikeGS</h3> -->
     </div>
     
-    <!-- <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-      <a href="https://coldsakrua.github.io/stump_playroom_hide/">
-        <img src="./static/images/stump_playroom_hide.png"
-             class="interpolation-image"
-             style="width: 19%; object-fit:cover;" 
-             alt="Interpolate start reference image."/>
-      <p>Stump hides in playroom</p>
-
-      </a>
       <a href="https://coldsakrua.github.io/stump_playroom_ini/">
-        <img src="./static/images/stump_playroom_ini.png"
-             class="interpolation-image"
-             style="width: 19%; object-fit:cover;" 
-             alt="Interpolate start reference image."/>
-      </a>
-      <p>Initial scene</p>
-
-      <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
-        <img src="./static/images/bonsai_counter_hide.png"
-             class="interpolation-image"
-             style="width: 19%; object-fit:cover;" 
-             alt="Interpolate start reference image."/>
-      </a>
-      <p>Bonsai hides in counter</p>
-
-
-      <a href="https://coldsakrua.github.io/bonsai_counter_ini/">
-        <img src="./static/images/bonsai_counter_ini.png"
-             class="interpolation-image"
-             style="width: 19%; object-fit:cover;" 
-             alt="Interpolate start reference image."/>
-      </a>
-      <p>Initial scene</p>
-    </div> -->
-    
-    <div style="display: flex; flex-wrap: nowrap;">
-      <a href="https://coldsakrua.github.io/stump_playroom_hide/">
-        <img src="./static/images/stump_playroom_hide.png" style="width: 75%; object-fit: cover;" alt="Stump hides in playroom"/>
-        <p>Stump hides in playroom</p>
-      </a>
-    
-      <a href="https://coldsakrua.github.io/stump_playroom_ini/">
-        <img src="./static/images/stump_playroom_ini.png" style="width: 75%; object-fit: cover;" alt="Initial scene"/>
+        <img src="./static/images/stump_playroom_ini.png" style="width: 90%; object-fit: cover;" alt="Initial scene"/>
         <p>Initial scene</p>
       </a>
     
-      <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
-        <img src="./static/images/bonsai_counter_hide.png" style="width: 75%; object-fit: cover;" alt="Bonsai hides in counter"/>
-        <p>Bonsai hides in counter</p>
-      </a>
+      
     
       <a href="https://coldsakrua.github.io/bonsai_counter_ini/">
-        <img src="./static/images/bonsai_counter_ini.png" style="width: 75%; object-fit: cover;" alt="Initial scene"/>
+        <img src="./static/images/bonsai_counter_ini.png" style="width: 90%; object-fit: cover;" alt="Initial scene"/>
         <p>Initial scene</p>
       </a>
+
+      <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
+        <img src="./static/images/kitchen_bonsai_ini.png" style="width: 90%; object-fit: cover;" alt="Initial scene"/>
+        <p>Initial scene</p>
+      </a>
+
+
+      <a href="https://coldsakrua.github.io/flower_playroom_ini/">
+        <img src="./static/images/flower_playroom_ini.png" style="width: 90%; object-fit: cover;" alt="Initial scene"/>
+        <p>Initial scene</p>
+      </a>
+
     </div>
 
 
     <div style="display: flex; flex-wrap: nowrap;">
+      <div style="display: flex; flex-wrap: nowrap;">
+        <a href="https://coldsakrua.github.io/stump_playroom_hide/">
+          <img src="./static/images/stump_playroom_hide.png" style="width: 90%; object-fit: cover;" alt="Stump hides in playroom"/>
+          <p>Stump hides in playroom</p>
+        </a>
+
+        <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
+          <img src="./static/images/bonsai_counter_hide.png" style="width: 90%; object-fit: cover;" alt="Bonsai hides in counter"/>
+          <p>Bonsai hides in counter</p>
+        </a>
+
       <a href="https://coldsakrua.github.io/kitchen_bonsai_hide/">
-        <img src="./static/images/kitchen_bonsai_hide.png" style="width: 75%; object-fit: cover;" alt="Stump hides in playroom"/>
+        <img src="./static/images/kitchen_bonsai_hide.png" style="width: 90%; object-fit: cover;" alt="Stump hides in playroom"/>
         <p>Kitchen hides in bonsai</p>
       </a>
     
-      <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
-        <img src="./static/images/stump_playroom_ini.png" style="width: 75%; object-fit: cover;" alt="Initial scene"/>
-        <p>Initial scene</p>
-      </a>
     
       <a href="https://coldsakrua.github.io/flower_playroom_hide/">
-        <img src="./static/images/flower_playroom_hide.png" style="width: 75%; object-fit: cover;" alt="Bonsai hides in counter"/>
+        <img src="./static/images/flower_playroom_hide.png" style="width: 90%; object-fit: cover;" alt="Bonsai hides in counter"/>
         <p>Flower hides in playroom</p>
       </a>
     
-      <a href="https://coldsakrua.github.io/flower_playroom_ini/">
-        <img src="./static/images/flower_playroom_ini.png" style="width: 75%; object-fit: cover;" alt="Initial scene"/>
-        <p>Initial scene</p>
-      </a>
-    </div>
-    
 
-    <div class="content has-text-justified">
-      <p style="font-size: 22px;">
-        We first reconstruct Bayer-pattern spike streams into spike intervals and spike accumulation. Unlike 3DGS, we adopt spike intervals to initialize SFM points, camera poses, and Gaussian
-        splats. We then embed the time accumulation process into the rasterizer to calibrate the colorization while maintaining multi-view
-        consistency. By progressively optimizing the 3DGS parameters using an accumulation loss and an interval loss, our method
-        facilitates high-quality 3DGS reconstruction.
-      </p>
     </div>
     
     </div>
   </div>
+</section> -->
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <!-- Swiper轮播容器 -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- 第一组图像 -->
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/stump_playroom_ini/">
+              <img src="./static/images/stump_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+              <p>Initial scene</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/bonsai_counter_ini/">
+              <img src="./static/images/bonsai_counter_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+              <p>Initial scene</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
+              <img src="./static/images/kitchen_bonsai_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+              <p>Initial scene</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/flower_playroom_ini/">
+              <img src="./static/images/flower_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+              <p>Initial scene</p>
+            </a>
+          </div>
+
+          <!-- 第二组图像 -->
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/stump_playroom_hide/">
+              <img src="./static/images/stump_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Stump hides in playroom"/>
+              <p>Stump hides in playroom</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
+              <img src="./static/images/bonsai_counter_hide.png" style="width: 100%; object-fit: cover;" alt="Bonsai hides in counter"/>
+              <p>Bonsai hides in counter</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/kitchen_bonsai_hide/">
+              <img src="./static/images/kitchen_bonsai_hide.png" style="width: 100%; object-fit: cover;" alt="Kitchen hides in bonsai"/>
+              <p>Kitchen hides in bonsai</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/flower_playroom_hide/">
+              <img src="./static/images/flower_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Flower hides in playroom"/>
+              <p>Flower hides in playroom</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- 分页器 (可选) -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 上下左右导航按钮 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    </div>
+  </div>
 </section>
+
+<!-- 初始化 Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true, // 循环模式
+    slidesPerView: 1, // 每次显示一个图片
+    spaceBetween: 10, // 图片之间的空隙
+    navigation: {
+      nextEl: '.swiper-button-next', // 下一张
+      prevEl: '.swiper-button-prev', // 上一张
+    },
+    pagination: {
+      el: '.swiper-pagination', // 分页器
+      clickable: true,
+    },
+  });
+</script>
 
 
 
@@ -317,7 +375,7 @@
 </section>
 
 <!--Real-worldd results  -->
-<!-- is-light -->
+<!-- is-light
 <section class="hero  is-small">
   <div class="hero-body">
     <div class="container">
@@ -370,7 +428,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
