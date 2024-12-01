@@ -225,62 +225,64 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           
-          <!-- 第一组图片 -->
+          <!-- 第一排图片 -->
           <div class="swiper-slide">
-            <a href="https://coldsakrua.github.io/stump_playroom_ini/">
-              <img src="./static/images/stump_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
-              <p>Initial scene</p>
-            </a>
+            <div class="columns is-centered">
+              <div class="column is-one-quarter">
+                <a href="https://coldsakrua.github.io/stump_playroom_ini/">
+                  <img src="./static/images/stump_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+              <div class="column is-one-quarter">
+                <a href="https://coldsakrua.github.io/bonsai_counter_ini/">
+                  <img src="./static/images/bonsai_counter_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+              <div class="column is-one-quarter">
+                <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
+                  <img src="./static/images/kitchen_bonsai_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+              <div class="column is-one-quarter">
+                <a href="https://coldsakrua.github.io/flower_playroom_ini/">
+                  <img src="./static/images/flower_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+            </div>
           </div>
 
+          <!-- 第二排图片 -->
           <div class="swiper-slide">
-            <a href="https://coldsakrua.github.io/bonsai_counter_ini/">
-              <img src="./static/images/bonsai_counter_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
-              <p>Initial scene</p>
-            </a>
-          </div>
-
-          <div class="swiper-slide">
-            <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
-              <img src="./static/images/kitchen_bonsai_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
-              <p>Initial scene</p>
-            </a>
-          </div>
-
-          <div class="swiper-slide">
-            <a href="https://coldsakrua.github.io/flower_playroom_ini/">
-              <img src="./static/images/flower_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
-              <p>Initial scene</p>
-            </a>
-          </div>
-
-          <!-- 第二组图片 -->
-          <div class="swiper-slide">
-            <a href="https://coldsakrua.github.io/stump_playroom_hide/">
-              <img src="./static/images/stump_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Stump hides in playroom"/>
-              <p>Stump hides in playroom</p>
-            </a>
-          </div>
-
-          <div class="swiper-slide">
-            <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
-              <img src="./static/images/bonsai_counter_hide.png" style="width: 100%; object-fit: cover;" alt="Bonsai hides in counter"/>
-              <p>Bonsai hides in counter</p>
-            </a>
-          </div>
-
-          <div class="swiper-slide">
-            <a href="https://coldsakrua.github.io/kitchen_bonsai_hide/">
-              <img src="./static/images/kitchen_bonsai_hide.png" style="width: 100%; object-fit: cover;" alt="Stump hides in playroom"/>
-              <p>Kitchen hides in bonsai</p>
-            </a>
-          </div>
-
-          <div class="swiper-slide">
-            <a href="https://coldsakrua.github.io/flower_playroom_hide/">
-              <img src="./static/images/flower_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Bonsai hides in counter"/>
-              <p>Flower hides in playroom</p>
-            </a>
+            <div class="columns is-centered">
+              <div class="column is-one-quarter">
+                <a href="https://coldsakrua.github.io/stump_playroom_hide/">
+                  <img src="./static/images/stump_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Stump hides in playroom"/>
+                  <p>Stump hides in playroom</p>
+                </a>
+              </div>
+              <div class="column is-one-quarter">
+                <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
+                  <img src="./static/images/bonsai_counter_hide.png" style="width: 100%; object-fit: cover;" alt="Bonsai hides in counter"/>
+                  <p>Bonsai hides in counter</p>
+                </a>
+              </div>
+              <div class="column is-one-quarter">
+                <a href="https://coldsakrua.github.io/kitchen_bonsai_hide/">
+                  <img src="./static/images/kitchen_bonsai_hide.png" style="width: 100%; object-fit: cover;" alt="Stump hides in playroom"/>
+                  <p>Kitchen hides in bonsai</p>
+                </a>
+              </div>
+              <div class="column is-one-quarter">
+                <a href="https://coldsakrua.github.io/flower_playroom_hide/">
+                  <img src="./static/images/flower_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Bonsai hides in counter"/>
+                  <p>Flower hides in playroom</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -294,6 +296,24 @@
     </div>
   </div>
 </section>
+
+<!-- 初始化 Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true, // 循环模式
+    slidesPerView: 4, // 每次显示4张图片，切换一张图片
+    spaceBetween: 10, // 图片之间的空隙
+    navigation: {
+      nextEl: '.swiper-button-next', // 下一张
+      prevEl: '.swiper-button-prev', // 上一张
+    },
+    pagination: {
+      el: '.swiper-pagination', // 分页器
+      clickable: true,
+    },
+  });
+</script>
+
 
 <!-- 初始化 Swiper -->
 <script>
