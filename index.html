@@ -68,7 +68,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">SpikeGS: Reconstruct 3D scene captured by a fast-moving bio-inspired camera</h1>
+          <h1 class="title is-1 publication-title">Splats in Splats: Embedding Invisible 3D Watermark within Gaussian Splatting
+          </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               AAAI Anonymous submission
@@ -134,21 +135,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p style="font-size: 22px;" >
-            3D Gaussian Splatting (3DGS) has been proven to exhibit exceptional performance in reconstructing 3D scenes. However,
-            the effectiveness of 3DGS heavily relies on sharp images, and
-            fulfilling this requirement presents challenges in real-world
-            scenarios particularly when utilizing fast-moving cameras.
-            This limitation severely constrains the practical application of
-            3DGS and may compromise the feasibility of real-time reconstruction. To mitigate these challenges, we proposed Spike
-            Gaussian Splatting (SpikeGS), the first framework that integrates the Bayer-pattern spike streams into 3DGS pipeline to
-            reconstruct 3D scenes captured by a fast-moving high temporal color spike camera in one second. 
-            With accumulation rasterization, interval supervision, and a specially designed pipeline, 
-            SpikeGS realizes continuous spatiotemporal
-            perception and extracts detailed geometry and texture from
-            Bayer-pattern spike stream which is unstable and lacks details. 
-            Extensive experiments on multiple synthetic 
-            and real-world datasets demonstrate the superiority of SpikeGS 
-            compared with existing spike-based and deblur 3D scene reconstruction methods. 
+            3D Gaussian splatting (3DGS) has demonstrated impressive 3D reconstruction performance with explicit scene representations. 
+            Given the widespread application of 3DGS in 3D reconstruction and generation tasks, 
+            there is an urgent need to protect the copyright of 3DGS assets. However, 
+            existing copyright protection techniques for 3DGS overlook the usability of 3D assets, 
+            posing challenges for practical deployment. Here we describe WaterGS, the first 3DGS watermarking framework that embeds 
+            3D content in 3DGS itself without modifying any attributes of the vanilla 3DGS. To achieve this, we take a deep 
+            insight into spherical harmonics (SH) and devise an importance-graded SH coefficient encryption strategy to 
+            embed the hidden SH coefficients. Furthermore, we employ a convolutional autoencoder to establish a mapping 
+            between the original Gaussian primitives' opacity and the hidden Gaussian primitives' opacity. 
+            Extensive experiments indicate that WaterGS significantly outperforms existing 3D steganography techniques, 
+            with 5.31% higher scene fidelity and 3X faster rendering speed, while ensuring security, robustness, and user experience.
           </p>
           
         </div>
