@@ -7,9 +7,10 @@
   <meta name="keywords" content="Neuromorphic Vision, Spike Camera, Radiance Field.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Splats in Splats: Embedding Invisible 3D Watermark within Gaussian Splatting</title>
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -157,7 +158,7 @@
 </section>
 
 
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered ">
@@ -214,7 +215,102 @@
       </div>
     </div>   
   </div>
+</section> -->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Swiper轮播容器 -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          
+          <!-- 第一组图片 -->
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/stump_playroom_ini/">
+              <img src="./static/images/stump_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+              <p>Initial scene</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/bonsai_counter_ini/">
+              <img src="./static/images/bonsai_counter_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+              <p>Initial scene</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
+              <img src="./static/images/kitchen_bonsai_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+              <p>Initial scene</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/flower_playroom_ini/">
+              <img src="./static/images/flower_playroom_ini.png" style="width: 100%; object-fit: cover;" alt="Initial scene"/>
+              <p>Initial scene</p>
+            </a>
+          </div>
+
+          <!-- 第二组图片 -->
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/stump_playroom_hide/">
+              <img src="./static/images/stump_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Stump hides in playroom"/>
+              <p>Stump hides in playroom</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
+              <img src="./static/images/bonsai_counter_hide.png" style="width: 100%; object-fit: cover;" alt="Bonsai hides in counter"/>
+              <p>Bonsai hides in counter</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/kitchen_bonsai_hide/">
+              <img src="./static/images/kitchen_bonsai_hide.png" style="width: 100%; object-fit: cover;" alt="Stump hides in playroom"/>
+              <p>Kitchen hides in bonsai</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://coldsakrua.github.io/flower_playroom_hide/">
+              <img src="./static/images/flower_playroom_hide.png" style="width: 100%; object-fit: cover;" alt="Bonsai hides in counter"/>
+              <p>Flower hides in playroom</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- 上下左右导航按钮 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- 分页器 (可选) -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- 初始化 Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true, // 循环模式
+    slidesPerView: 1, // 每次显示一个图片
+    spaceBetween: 10, // 图片之间的空隙
+    navigation: {
+      nextEl: '.swiper-button-next', // 下一张
+      prevEl: '.swiper-button-prev', // 上一张
+    },
+    pagination: {
+      el: '.swiper-pagination', // 分页器
+      clickable: true,
+    },
+  });
+</script>
 
 
 
