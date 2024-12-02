@@ -163,14 +163,13 @@
 <!-- 引入 Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- Swiper轮播容器 -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
           
-          <!-- 第一组图片 -->
+
           <div class="swiper-slide">
             <div class="columns is-centered">
               <div class="column is-half">
@@ -202,7 +201,7 @@
             </div>
           </div>
 
-          <!-- 第二组图片 -->
+
           <div class="swiper-slide">
             <div class="columns is-centered">
               <div class="column is-half">
@@ -235,35 +234,120 @@
           </div>
         </div>
 
-        <!-- 上下左右导航按钮 -->
+
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
 
-        <!-- 分页器 -->
         <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 初始化 Swiper -->
+
 <script>
   var swiper = new Swiper('.swiper-container', {
-    loop: true, // 循环模式
-    slidesPerView: 1, // 每次显示一个轮播项（即一组两排）
-    spaceBetween: 10, // 每个轮播项之间的间隔
+    loop: true, 
+    slidesPerView: 1,
+    spaceBetween: 10,
     navigation: {
-      nextEl: '.swiper-button-next', // 下一张按钮
-      prevEl: '.swiper-button-prev', // 上一张按钮
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     pagination: {
-      el: '.swiper-pagination', // 分页器
+      el: '.swiper-pagination', 
       clickable: true,
     },
   });
-</script>
+</script> -->
 
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <a href="https://coldsakrua.github.io/stump_playroom_ini/">
+                  <img src="./static/images/stump_playroom_ini.png" class="d-block w-100" alt="Initial scene"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="https://coldsakrua.github.io/bonsai_counter_ini/">
+                  <img src="./static/images/bonsai_counter_ini.png" class="d-block w-100" alt="Initial scene"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <a href="https://coldsakrua.github.io/stump_playroom_hide/">
+                  <img src="./static/images/stump_playroom_hide.png" class="d-block w-100" alt="Initial scene"/>
+                  <p>Stump hides in playroom</p>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
+                  <img src="./static/images/bonsai_counter_hide.png" class="d-block w-100" alt="Initial scene"/>
+                  <p>Bonsai hides in counter</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
+                  <img src="./static/images/kitchen_bonsai_ini.png" class="d-block w-100" alt="Stump hides in playroom"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="https://coldsakrua.github.io/flower_playroom_ini/">
+                  <img src="./static/images/flower_playroom_ini.png" class="d-block w-100" alt="Bonsai hides in counter"/>
+                  <p>Initial scene</p>
+                </a>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <a href="https://coldsakrua.github.io/kitchen_bonsai_hide/">
+                  <img src="./static/images/kitchen_bonsai_hide.png" class="d-block w-100" alt="Stump hides in playroom"/>
+                  <p>Kitchen hides in bonsai</p>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="https://coldsakrua.github.io/flower_playroom_hide/">
+                  <img src="./static/images/flower_playroom_hide.png" class="d-block w-100" alt="Bonsai hides in counter"/>
+                  <p>Flower hides in playroom</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 
 <!-- table -->
