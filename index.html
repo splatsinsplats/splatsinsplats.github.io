@@ -234,96 +234,11 @@
           </div>
         </div>
 
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
 </section>
 
-
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    loop: true, 
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination', 
-      clickable: true,
-    },
-  });
-</script>
-
-
-
-
-<!-- table -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-
-
-    <div class="columns is-centered has-text-centered">
-      <h3 class="title is-3 ">Comparison With Baselines</h3>
-    </div>
-    <div class="content has-text-centered" >
-      <img src="./static/images/baselinetable.png"
-        class="interpolation-image"
-        style="width: 100%; object-fit:cover;"
-      alt="Interpolate start reference image."/>
-    </div>
-    <!-- <div class="content has-text-justified">
-      <p>
-        Quantitative comparisons of novel view synthesis on synthetic datasets. The best and second-best performances are
-        respectively highlighted in bold and underscored with an underline. Our SpikeGS demonstrates the best NVS quality.
-      </p>
-    </div> -->
-
-    </div>
-  </div>
-</section>
-
-<!-- compare -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-bicycle-playroom-hide">
-          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=08878eb2-b079-11ef-9397-d93975fe8866"></iframe>
-        </div>
-        <div class="item item-ori-bicycle">
-          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=da5c766a-b0c3-11ef-9397-d93975fe8866"></iframe>
-        </div>
-        <div class="item item-flower-playroom-hide">
-          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=477a566c-b07a-11ef-9397-d93975fe8866"></iframe>
-        </div>
-        <div class="item item-ori-flower">
-          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=18e04eac-b0c4-11ef-9397-d93975fe8866"></iframe>
-        </div>
-        <div class="item item-garden-playroom-hide">
-          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=68fb8cfa-b07c-11ef-9397-d93975fe8866"></iframe>
-        </div>
-        <div class="item item-ori-garden">
-          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=18e04eac-b0c4-11ef-9397-d93975fe8866"></iframe>
-        </div>
-        <div class="item item-kitchen-bonsai-hide">
-          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=f8ca7fbc-b07c-11ef-9397-d93975fe8866"></iframe>
-        </div>
-        <div class="item item-ori-kitchen">
-          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6b1c91b2-b0c4-11ef-9397-d93975fe8866"></iframe>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <section class="hero is-small">
@@ -411,12 +326,95 @@
   </div>
 </section>
 
-<!-- Initialize Bootstrap Carousel -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true, 
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination', 
+      clickable: true,
+    },
+  });
+</script>
 
 
 
-<!-- <section class="hero is-small">
+
+<!-- table -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+
+    <div class="columns is-centered has-text-centered">
+      <h3 class="title is-3 ">Comparison With Baselines</h3>
+    </div>
+    <div class="content has-text-centered" >
+      <img src="./static/images/baselinetable.png"
+        class="interpolation-image"
+        style="width: 100%; object-fit:cover;"
+      alt="Interpolate start reference image."/>
+    </div>
+    <!-- <div class="content has-text-justified">
+      <p>
+        Quantitative comparisons of novel view synthesis on synthetic datasets. The best and second-best performances are
+        respectively highlighted in bold and underscored with an underline. Our SpikeGS demonstrates the best NVS quality.
+      </p>
+    </div> -->
+
+    </div>
+  </div>
+</section>
+
+<!-- compare -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-bicycle-playroom-hide">
+          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=08878eb2-b079-11ef-9397-d93975fe8866"></iframe>
+        </div>
+        <div class="item item-ori-bicycle">
+          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=da5c766a-b0c3-11ef-9397-d93975fe8866"></iframe>
+        </div>
+        <div class="item item-flower-playroom-hide">
+          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=477a566c-b07a-11ef-9397-d93975fe8866"></iframe>
+        </div>
+        <div class="item item-ori-flower">
+          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=18e04eac-b0c4-11ef-9397-d93975fe8866"></iframe>
+        </div>
+        <div class="item item-garden-playroom-hide">
+          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=68fb8cfa-b07c-11ef-9397-d93975fe8866"></iframe>
+        </div>
+        <div class="item item-ori-garden">
+          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=18e04eac-b0c4-11ef-9397-d93975fe8866"></iframe>
+        </div>
+        <div class="item item-kitchen-bonsai-hide">
+          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=f8ca7fbc-b07c-11ef-9397-d93975fe8866"></iframe>
+        </div>
+        <div class="item item-ori-kitchen">
+          <iframe frameborder="0" class="juxtapose" width="100%" height="320" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6b1c91b2-b0c4-11ef-9397-d93975fe8866"></iframe>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -441,7 +439,7 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <!--Real-worldd results  -->
 <!-- is-light
