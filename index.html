@@ -98,7 +98,7 @@
 
 
 
-          <!-- <div class="column has-text-centered">
+          <div class="column has-text-centered">
             <div class="publication-links">
               
               <span class="link-block">
@@ -116,10 +116,10 @@
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Arxiv</span>
                   </a>
             </div>
-          </div> -->
+          </div>
 
         </div>
       </div>
@@ -173,33 +173,6 @@
 
 
 
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="columns is-centered has-text-centered">
-      <div class="column" style="padding-left: 100px;padding-right: 100px;">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p style="font-size: 22px;" >
-            3D Gaussian splatting (3DGS) has demonstrated impressive 3D reconstruction performance with explicit scene representations. 
-            Given the widespread application of 3DGS in 3D reconstruction and generation tasks, 
-            there is an urgent need to protect the copyright of 3DGS assets. However, 
-            existing copyright protection techniques for 3DGS overlook the usability of 3D assets, 
-            posing challenges for practical deployment. Here we describe WaterGS, the first 3DGS watermarking framework that embeds 
-            3D content in 3DGS itself without modifying any attributes of the vanilla 3DGS. To achieve this, we take a deep 
-            insight into spherical harmonics (SH) and devise an importance-graded SH coefficient encryption strategy to 
-            embed the hidden SH coefficients. Furthermore, we employ a convolutional autoencoder to establish a mapping 
-            between the original Gaussian primitives' opacity and the hidden Gaussian primitives' opacity. 
-            Extensive experiments indicate that WaterGS significantly outperforms existing 3D steganography techniques, 
-            with 5.31% higher scene fidelity and 3X faster rendering speed, while ensuring security, robustness, and user experience.
-          </p>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -222,7 +195,7 @@
 <!-- 引入 Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
+<!-- 
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -231,7 +204,7 @@
       </div>
       <div class="columns is-centered is-multiline">
         
-        <!-- 第一排图片 -->
+
         <div class="column is-3 has-text-centered">
           <a href="https://coldsakrua.github.io/stump_playroom_ini/">
             <img src="./static/images/stump_playroom_ini.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Initial scene"/>
@@ -260,7 +233,7 @@
           </a>
         </div>
 
-        <!-- 第二排图片 -->
+
         <div class="column is-3 has-text-centered">
           <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
             <img src="./static/images/kitchen_bonsai_ini.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Kitchen bonsai"/>
@@ -292,8 +265,80 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <h3 class="title is-3">Examples of Hiding Scene A in Scene B</h3>
+      </div>
+      <div class="columns is-centered is-multiline">
+
+        <!-- 第一排图片 -->
+        <div class="column is-6 has-text-centered">
+          <a href="https://coldsakrua.github.io/stump_playroom_ini/">
+            <img src="./static/images/stump_playroom_ini.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Initial scene"/>
+            <p>Initial Stump</p>
+          </a>
+        </div>
+
+        <div class="column is-6 has-text-centered">
+          <a href="https://coldsakrua.github.io/stump_playroom_hide/">
+            <img src="./static/images/stump_playroom_hide.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Stump hides in playroom"/>
+            <p>Stump hides in playroom</p>
+          </a>
+        </div>
+
+        <!-- 第二排图片 -->
+        <div class="column is-6 has-text-centered">
+          <a href="https://coldsakrua.github.io/bonsai_counter_ini/">
+            <img src="./static/images/bonsai_counter_ini.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Initial scene"/>
+            <p>Initial Bonsai</p>
+          </a>
+        </div>
+        
+        <div class="column is-6 has-text-centered">
+          <a href="https://coldsakrua.github.io/bonsai_counter_hide/">
+            <img src="./static/images/bonsai_counter_hide.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Bonsai hides in counter"/>
+            <p>Bonsai hides in counter</p>
+          </a>
+        </div>
+
+        <!-- 第三排图片 -->
+        <div class="column is-6 has-text-centered">
+          <a href="https://coldsakrua.github.io/kitchen_bonsai_ini/">
+            <img src="./static/images/kitchen_bonsai_ini.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Kitchen bonsai"/>
+            <p>Initial Kitchen</p>
+          </a>
+        </div>
+
+        <div class="column is-6 has-text-centered">
+          <a href="https://coldsakrua.github.io/kitchen_bonsai_hide/">
+            <img src="./static/images/kitchen_bonsai_hide.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Kitchen bonsai hide"/>
+            <p>Kitchen hides in bonsai</p>
+          </a>
+        </div>
+
+        <!-- 第四排图片 -->
+        <div class="column is-6 has-text-centered">
+          <a href="https://coldsakrua.github.io/flower_playroom_ini/">
+            <img src="./static/images/flower_playroom_ini.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Flower playroom"/>
+            <p>Initial Flower</p>
+          </a>
+        </div>
+        
+        <div class="column is-6 has-text-centered">
+          <a href="https://coldsakrua.github.io/flower_playroom_hide/">
+            <img src="./static/images/flower_playroom_hide.png" style="max-width: 100%; height: auto; object-fit: cover;" alt="Flower playroom hide"/>
+            <p>Flower hides in playroom</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!-- table -->
