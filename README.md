@@ -1,6 +1,6 @@
 # Nerfies
 
-This is the repository for SpikeGS. The template is from the [Nerfies website](https://nerfies.github.io).
+This is the repository for WaterGS. The template is from the [Nerfies website](https://nerfies.github.io).
 
 
 
