@@ -134,7 +134,7 @@
 
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            Splats in Splats: Embedding Invisible 3D Watermark within Gaussian Splatting
+            Splats in Splats: Robust and Effective 3D Steganography towards Gaussian Splatting
           </h1>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block" style="white-space: nowrap;">
@@ -216,16 +216,12 @@
         <div class="content has-text-justified">
           <p style="font-size: 22px;" >
             3D Gaussian splatting (3DGS) has demonstrated impressive 3D reconstruction performance with explicit scene representations. 
-            Given the widespread application of 3DGS in 3D reconstruction and generation tasks, 
-            there is an urgent need to protect the copyright of 3DGS assets. However, 
-            existing copyright protection techniques for 3DGS overlook the usability of 3D assets, 
-            posing challenges for practical deployment. Here we describe WaterGS, the first 3DGS watermarking framework that embeds 
-            3D content in 3DGS itself without modifying any attributes of the vanilla 3DGS. To achieve this, we take a deep 
-            insight into spherical harmonics (SH) and devise an importance-graded SH coefficient encryption strategy to 
-            embed the hidden SH coefficients. Furthermore, we employ a convolutional autoencoder to establish a mapping 
-            between the original Gaussian primitives' opacity and the hidden Gaussian primitives' opacity. 
-            Extensive experiments indicate that WaterGS significantly outperforms existing 3D steganography techniques, 
-            with 5.31% higher scene fidelity and 3X faster rendering speed, while ensuring security, robustness, and user experience.
+            Given the widespread application of 3DGS in 3D reconstruction and generation tasks, there is an urgent need to protect the copyright of 3DGS assets. 
+            However, existing copyright protection techniques for 3DGS overlook the usability of 3D assets, posing challenges for practical deployment.
+            Here we describe \textbf{\textit{splats in splats}}, the first 3DGS steganography framework that embeds 3D content in 3DGS itself without modifying any attributes. 
+            To achieve this, we take a deep insight into spherical harmonics (SH) and devise an importance-graded SH coefficient encryption strategy to embed the hidden SH coefficients. 
+            urthermore, we employ a convolutional autoencoder to establish a mapping between the original Gaussian primitives' opacity and the hidden Gaussian primitives' opacity. 
+            Extensive experiments indicate that our method significantly outperforms existing 3D steganography techniques, with 5.31% higher scene fidelity and 3 times faster rendering speed, while ensuring security, robustness, and user experience.
           </p>
           
         </div>
@@ -246,7 +242,7 @@
       <h3 class="title is-3 ">Overview of WaterGS</h3>
     </div>
     <div class="content has-text-centered">
-      <img src="./static/images/framework.png"
+      <img src="./static/images/framework_2.png"
         class="interpolation-image"
         style="width: 100%; object-fit:cover;"
       alt="Interpolate start reference image."/>
@@ -416,7 +412,7 @@
       <h3 class="title is-3 ">Comparison With Baselines</h3>
     </div>
     <div class="content has-text-centered" >
-      <img src="./static/images/baselinetable.png"
+      <img src="./static/images/baseline.png"
         class="interpolation-image"
         style="width: 100%; object-fit:cover;"
       alt="Interpolate start reference image."/>
